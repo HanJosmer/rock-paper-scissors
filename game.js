@@ -51,8 +51,48 @@ function playRound (playerSelection, computerSelection) {
     }
 }
 
-// const playerSelection = "scissors";
-// const computerSelection = computerPlay();
+const playerSelection = "scissors";
+const computerSelection = computerPlay();
 // console.log(playerSelection);
 // console.log(computerSelection);
 // console.log(playRound(playerSelection, computerSelection));
+
+function game() {
+    let wins = 0;
+    let ties = 0;
+    let losses = 0;
+    function score(playerSelection, computerSelection) {
+        let round = playRound(playerSelection, computerSelection);
+        console.log(round);
+        if (round == "You win :)") {
+            wins += 1;
+            return;
+        }
+        else if (round == "You tied :|") {
+            ties += 1;
+            return;
+        }
+        else {
+            losses += 1;
+            return;
+        }
+    }
+    function finalScore(wins, losses) {
+        if (wins > losses) {
+            return `You won ${wins} out of 5 games.  You sure are good!`;
+        } else if (losses > wins) {
+            return `You lost ${losses} out of 5 games.  Better luck next time!`;
+        }
+        else {
+            return "I don't know how you did it, but the best of five wound up in a draw!";
+        }
+    }
+    score(playerSelection, computerSelection);
+    score(playerSelection, computerSelection);
+    score(playerSelection, computerSelection);
+    score(playerSelection, computerSelection);
+    score(playerSelection, computerSelection);
+    console.log(finalScore(wins, losses));
+}
+
+game();
