@@ -1,0 +1,129 @@
+
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main-container {
+    min-height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.main-child {
+    flex-grow: 1;
+}
+
+#middle-col {
+    min-width: 600px;
+}
+
+.col-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.col-child {
+    flex-grow: 1;
+    margin: 5%;
+    font-size: 1.2em
+}
+
+.game-container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.game-child {
+    flex-grow: 1;
+    margin: 5px;
+}
+
+#title-bar {
+    font-size: 1.4em;
+    font-weight: bold;
+    user-select: none;
+    background-color: palegoldenrod;
+}
+
+#game-count {
+    font-size: 1.3em;
+    user-select: none;
+    background-color: lightpink;
+}
+
+#restart-game {
+    font-size: 1.3em;
+    user-select: none;
+    background-color: lightgray;
+}
+
+#quit-game {
+    font-size: 1.3em;
+    user-select: none;
+    background-color: lightcoral;
+}
+
+#quit-game:active, #restart-game:active {
+    transform: scale(0.9);
+    transition: 0.05;
+}
+
+.scoreboard-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.scoreboard-child {
+    flex-grow: 1;
+    margin: 5px;
+    background-color: palegreen;
+}
+
+.scoreboard-child > p {
+    padding: 10px;
+    text-align: center;
+    user-select: none;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.options-child {
+    flex-grow: 1;
+    margin: 5px;
+    background-color: paleturquoise;
+}
+
+.options-child:active {
+    transform: scale(0.9);
+    transition: 0.05;
+}
+
+.options-child-active {
+    transform: 1.1;
+    transition: 0.05;
+}
+
+.options-child > p {
+    padding: 10px;
+    text-align: center;
+    user-select: none;
+}

@@ -1,1 +1,58 @@
-<script src="game.js"></script>
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Rock, Paper, Scissors</title>
+        <meta http-equiv="author" content="John Hosmer"
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div id="main-body" class="main-container">
+            <div id="left-col" class="main-child">
+                &nbsp;
+            </div>
+            <div id="middle-col" class="main-child col-container">
+                <div id="game" class="col-child game-container">
+                    <div id="title-bar" class="game-child">
+                        <p>Rock, Paper, Scissors</p>
+                    </div>
+                    <div id="game-count" class="game-child">
+                        <p>Games Played: <span id="games-played"></span></p>
+                    </div>
+                    <div id="scoreboard" class="game-child scoreboard-container">
+                        <div id="player" class="scoreboard-child">
+                            <p>Player Score: <span id="player-score"></span></p>
+                        </div>
+                        <div id="ties" class="scoreboard-child">
+                            <p>Draws: <span id="draws"></span></p>
+                        </div>
+                        <div id="computer" class="scoreboard-child">
+                            <p>Computer Score: <span id="computer-score"></span></p>
+                        </div>
+                    </div>
+                    <div id="options" class="game-child options-container">
+                        <div id="rock" class="options-child options">
+                            <p>Rock</p>
+                        </div>
+                        <div id="paper" class="options-child options">
+                            <p>Paper</p>
+                        </div>
+                        <div id="scissors" class="options-child options">
+                            <p>Scissors</p>
+                        </div>
+                    </div>
+                    <div id="restart-game" class="game-child">
+                        <p>Restart Game</p>
+                    </div>
+                    <div id="quit-game" class="game-child">
+                        <p>Quit Game</p>
+                    </div>
+                </div>
+            </div>
+            <div id="right-col" class="main-child">
+                &nbsp;
+            </div>
+        </div>
+    </body>
+    <script src="game.js"></script>
+</html>
